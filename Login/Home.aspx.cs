@@ -115,10 +115,12 @@ namespace Login
                 }
                 else
                 {
+                    /*
                     mensajeTexto.InnerText = "El nombre o la identificacion no puede estar vacio";
 
                     //Mostrar el cuadro de mensaje
                     divMensaje.Style["display"] = "block";
+                    */
                    
                 }
 
