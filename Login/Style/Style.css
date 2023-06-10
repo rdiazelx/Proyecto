@@ -1,12 +1,24 @@
 ﻿#myContainer {
-    border: 1px solid #000;
     text-align: center;
-    padding: 0; /* Remove or set to a smaller value */
-    margin: 10px; /* Add margin for spacing */
+    padding: 0;
+    margin: 10px;
+    background-color: white;
+    width: 15%; /* Adjust the width as desired */
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+body {
+    background-color: lightgray;
 }
 
 .estandarTexbox,
-.dropdownClass {
+.dropdownClass,
+#dpEstadoCivil,
+#dpGenero {
+    margin-top: 15px;
     margin-bottom: 10px;
     display: block;
     width: 300px;
@@ -14,7 +26,8 @@
     margin-right: auto;
     padding: 5px;
     font-size: 18px;
-    box-sizing: border-box; /* Add this line to include padding in the width */
+    box-sizing: border-box; /* Include padding in the width */
+    background-color: white; /* Set the background color to white */
 }
 
 #btnGuardar {
@@ -67,6 +80,11 @@
     .btnClass:hover {
         background-color: darkgreen;
     }
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
 
 .login-container {
     background-image: url('../image/login-background.jpg');
