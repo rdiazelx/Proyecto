@@ -70,6 +70,7 @@
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="Image\319951.jpg" />
+    <Content Include="listaPersonas.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Style\Style.css" />
     <Content Include="Web.config" />
@@ -85,6 +86,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listaPersonas.aspx.cs">
+      <DependentUpon>listaPersonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listaPersonas.aspx.designer.cs">
+      <DependentUpon>listaPersonas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

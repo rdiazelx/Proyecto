@@ -88,10 +88,20 @@ namespace Login
                 if (!string.IsNullOrEmpty(nombre) || !string.IsNullOrEmpty(identificacion))
                 {
 
-                //definir la lista
-                List<oPersona> listaPersona = new List<oPersona>();
-                    
-                 var objPersona = new oPersona();
+                    //definir la lista
+                    //List<oPersona> listaPersona = new List<oPersona>();
+
+                    var listaPersona = (List<oPersona>)Session["listaPersona"];
+
+                    if (listaPersona != null)
+                    {
+                        linkListaPersonas.Style["display"] = "block";
+                    }
+
+
+
+                                                          
+                    var objPersona = new oPersona();
 
                     objPersona.nombre = nombre;
                     objPersona.apellido1 = apellido1;
@@ -102,14 +112,22 @@ namespace Login
                     objPersona.tipoIdentificacion= tipoIdentificacion;
                     objPersona.genero = genero;
 
+                    if (listaPersona == null)
+                    {
+                        listaPersona = new List<oPersona>();
+                    }
+
                     //agrega el objeto a la lista
                     listaPersona.Add(objPersona);
 
                     //Guardamos la lista como sesion
 
-                    Session["listapersona"] = listaPersona;
+                    Session["listaPersona"] = listaPersona;
 
+                    mensajeTexto.InnerText = "Los datos fueron guardados";
 
+                    //Mostrar el cuadro de mensaje
+                    divMensaje.Style["display"] = "block";
 
 
                 }

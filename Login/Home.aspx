@@ -40,8 +40,13 @@
         <p>
             <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="btnClass" />
         </p>
+        
 
     </form>
+
+       <a href="listaPersonas.aspx" runat="server" style="display: none;" id="linkListaPersonas">Ver lista Personas</a>
+
+
 </div>
 
 
