@@ -1,7 +1,8 @@
 ﻿#myContainer {
     border: 1px solid #000;
-    padding: 10px;
     text-align: center;
+    padding: 0; /* Remove or set to a smaller value */
+    margin: 10px; /* Add margin for spacing */
 }
 
 .estandarTexbox,
@@ -66,28 +67,6 @@
     .btnClass:hover {
         background-color: darkgreen;
     }
-.estandarTexbox,
-.txtClass,
-.dropdownClass {
-    margin-bottom: 10px;
-    display: block;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    font-size: 18px;
-}
-
-#dpEstadoCivil,
-#dpGenero {
-    display: block;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    font-size: 18px;
-}
-
 
 .login-container {
     background-image: url('../image/login-background.jpg');
