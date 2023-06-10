@@ -17,37 +17,33 @@
     <h2>Agregar Persona</h2>
 
 
-    <div class="container" id="myContainer">
+   <div class="container" id="myContainer">
 
-        <form runat="server" id="formPersona">
+    <form runat="server" id="formPersona">
 
-            <asp:TextBox ID="txtNombre" runat="server" CssClass="estandarTexbox" placeholder="nombre"></asp:TextBox>
+        <asp:TextBox ID="txtNombre" runat="server" CssClass="estandarTexbox" placeholder="nombre"></asp:TextBox>
 
-            <asp:TextBox ID="txtApellido1" runat="server" CssClass="estandarTexbox" placeholder="Apellido1"></asp:TextBox></td>
-                
-                <asp:TextBox ID="txtApellido2" runat="server" CssClass="estandarTexbox" placeholder="Apellido2"></asp:TextBox></td>
-                
-                <asp:DropDownList ID="dptipoIdentificacion" CssClass="txtClass" runat="server"></asp:DropDownList>
+        <asp:TextBox ID="txtApellido1" runat="server" CssClass="estandarTexbox" placeholder="Apellido1"></asp:TextBox>
 
-            <asp:TextBox ID="txtIdentifiacion" runat="server" CssClass="estandarTexbox" placeholder="Identificacion"></asp:TextBox></td>
-                
-                <asp:TextBox ID="txtFechaNacimiento" runat="server" CssClass="estandarTexbox" placeholder="dd/mm/aaaa" TextMode="Date"></asp:TextBox></td>
+        <asp:TextBox ID="txtApellido2" runat="server" CssClass="estandarTexbox" placeholder="Apellido2"></asp:TextBox>
 
-                <asp:DropDownList ID="dpEstadoCivil" runat="server"></asp:DropDownList>
+        <asp:DropDownList ID="dptipoIdentificacion" CssClass="dropdownClass" runat="server"></asp:DropDownList>
 
-            <asp:DropDownList ID="dpGenero" runat="server"></asp:DropDownList>
+        <asp:TextBox ID="txtIdentifiacion" runat="server" CssClass="estandarTexbox" placeholder="Identificacion"></asp:TextBox>
 
-            <p>
+        <asp:TextBox ID="txtFechaNacimiento" runat="server" CssClass="estandarTexbox" placeholder="dd/mm/aaaa" TextMode="Date"></asp:TextBox>
 
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
+        <asp:DropDownList ID="dpEstadoCivil" runat="server" CssClass="dropdownClass"></asp:DropDownList>
 
-            </p>
+        <asp:DropDownList ID="dpGenero" runat="server" CssClass="dropdownClass"></asp:DropDownList>
 
+        <p>
+            <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="btnClass" />
+        </p>
 
+    </form>
+</div>
 
-
-        </form>
-    </div>
 
     <div class="dialog-container" id="divMensaje" style="display: none;" runat="server">
         <div class="message-box">
