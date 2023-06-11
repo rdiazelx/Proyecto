@@ -44,7 +44,7 @@
 
     </form>
 
-       <a href="listaPersonas.aspx" runat="server" style="display: none;" id="linkListaPersonas">Ver lista Personas</a>
+       <a href="listaPersonas.aspx" runat="server" style="display: none;" id="linkListaPersonas" target="_blank">Ver lista Personas</a>
 
 
 </div>

@@ -12,7 +12,12 @@
 
     <div class="containerTable">
         <form id="formListaPersonas" runat="server">
-
+            <div>
+                <asp:TextBox ID="txtFiltro" runat="server" placeholder="Filtro por genero"></asp:TextBox>
+                <asp:Button ID="btnFiltar" runat="server" Text="Filtrar" OnClick="btnFiltar_Click" />
+            </div>
+            
+            
             <div>
 
                 <asp:GridView ID="gridListaPersonas" runat="server"></asp:GridView>
@@ -20,12 +25,14 @@
 
             </div>
         </form>
-    </div>
 
-
-
-
-
-
+        <div class="dialog-container" id="divMensaje" style="display: none;" runat="server">
+            <div class="message-box">
+                <div id="mensajeContenido">
+                    <span id="mensajeTexto" runat="server"></span>
+                    <button id="cerrarMensaje" class="btnClass btnMensaje" onclick="">regresar</button>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
