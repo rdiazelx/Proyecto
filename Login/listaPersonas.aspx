@@ -26,13 +26,26 @@
             </div>
         </form>
 
-        <div class="dialog-container" id="divMensaje" style="display: none;" runat="server">
-            <div class="message-box">
-                <div id="mensajeContenido">
-                    <span id="mensajeTexto" runat="server"></span>
-                    <button id="cerrarMensaje" class="btnClass btnMensaje" onclick="">regresar</button>
-                </div>
+       <div class="dialog-container" id="divMensaje" style="display: none;" runat="server">
+        <div class="message-box">
+            <div id="mensajeContenido">
+                <span id="mensajeTexto" runat="server"></span>
+                <button id="cerrarMensaje" class="btnClass btnMensaje" onclick="cerrarMensaje()">Cerrar</button>
+
             </div>
         </div>
+    </div>
+     <script>
+         function cerrarMensaje() {
+             var divMensaje = document.getElementById("divMensaje");
+             divMensaje.style.display = "none";
+         }
+     </script>
+ 
+
+
+
+
+
 </body>
 </html>

@@ -95,13 +95,7 @@ namespace Login
                     //=> quiere decir donde
 
                 }
-                else
-                {
-                    mensajeTexto.InnerText = "El filtro esta vacio";
-                    //Mostrar el cuadro de mensaje
-                    divMensaje.Style["display"] = "block";
-                }
-               
+                             
                     var dt = GeneraTablaDinamica<oPersona>(listaPersonas);
 
                     gridListaPersonas.DataSource = dt;
