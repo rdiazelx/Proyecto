@@ -132,3 +132,30 @@ h2 {
     width: 80px;
     height: 50px;
 }
+
+.container-botones {
+    display: flex;
+    margin-top: 20%;
+}
+
+.divLeft {
+    float: left;
+    width: 50%;
+}
+
+.divRight {
+    float: right;
+    width: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+.btnClass {
+    flex: 1;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    Width: 250px;
+}

@@ -139,7 +139,6 @@ namespace Login
                     //Mostrar el cuadro de mensaje
                     divMensaje.Style["display"] = "block";
                    
-                   
                 }
 
 

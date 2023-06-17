@@ -59,6 +59,8 @@
             </div>
         </div>
     </div>
+
+
      <script>
         function cerrarMensaje() {
             var divMensaje = document.getElementById("divMensaje");

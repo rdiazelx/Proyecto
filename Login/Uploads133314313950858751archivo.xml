@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<ListaPersonas>
+  <Persona>
+    <id>0</id>
+    <nombre>Ricardo</nombre>
+    <apellido1>Diaz</apellido1>
+    <apellido2>Elizondo</apellido2>
+    <identificacion>11111</identificacion>
+    <tipoIdentificacion>Cedula</tipoIdentificacion>
+    <fechaDeNacimiento>1986-06-05T00:00:00-06:00</fechaDeNacimiento>
+    <estadoCivil>Casado</estadoCivil>
+    <genero>Masculino</genero>
+  </Persona>
+</ListaPersonas>
